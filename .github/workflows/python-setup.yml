@@ -33,7 +33,7 @@ jobs:
         run: python3 ${{ env.DEVOPS_DIR }}/main.py
         shell: sh
       - name: Upload output file
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: output-file
           path: file.txt
