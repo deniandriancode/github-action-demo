@@ -9,7 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - run: cd react-app-github-actions
-      - run: npm install
-      - run: npm build
+      - run: |
+          cd react-app-github-actions
+          npm install
+          npm build
       - run: echo "All done!"
