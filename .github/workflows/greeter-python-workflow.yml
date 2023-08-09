@@ -22,7 +22,7 @@ jobs:
           cd greeter-python
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pyinstaller main.py
+          pyinstaller --onefile main.py
       - uses: actions/upload-artifact@v3
         with:
           name: greeter-py
