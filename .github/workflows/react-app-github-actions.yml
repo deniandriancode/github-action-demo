@@ -1,0 +1,15 @@
+name: React App GitHub Actions
+run-name: ${{ github.actor }} is building a React App!
+on: [push]
+jobs:
+  build-react-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - run: cd react-app-github-actions
+      - run: npm install
+      - run: npm build
+      - run: echo "All done!"
