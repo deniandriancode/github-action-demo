@@ -1,5 +1,6 @@
 ./**/node_modules/
 ./**/**/node_modules/
 ./**/venv/
+./**/**/venv/
 ./greeter-python/build/
 ./greeter-python/dist/
